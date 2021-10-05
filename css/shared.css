@@ -1,0 +1,73 @@
+/********************           SHARED - basic styles and variables              *****************/
+
+:root {
+    --grey-text: 85, 85, 85;
+    --yellow: 234, 138, 35;
+    --brown: 97, 91, 86;
+}
+
+/**********************************            call to action section         ******************************/
+#cta {
+    background-color: #fff5bd;
+    text-align: center;
+    height: calc(100vh - 120px);
+    padding: 50px 50px;
+    background-image: url(../images/dog-app.jpeg);
+    background-repeat: no-repeat;
+}
+
+.cta-heading {
+    font-family: "Montserrat-Black";
+    color: #fc46aa;
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+.cta-button {
+    margin: 5% 3% 5% 0;
+}
+
+/**********************************            Button         ******************************/
+.btn,
+.btn1 {
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 5% 3% 5% 0;
+    border: 0;
+}
+.btn {
+    background: #ffb448;
+}
+
+.btn2 {
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+    outline: none !important;
+    display: block;
+    width: 180px;
+    margin: 5vh 0;
+    border: 0;
+    transition: 0.5s;
+}
+.btn2:hover {
+    box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.5);
+}
+.btn2 {
+    background: #ec0722;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 0.09em;
+}
+
+/**********************************        Media Screen         ******************************/
+
+@media (min-width: 768px) and (max-width: 767px) {
+    #cta {
+        background-position: center;
+
+        height: 80vh;
+    }
+}
