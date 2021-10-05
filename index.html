@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Landing Page</title>
+
+        <!------------------     Google Fonts       ------------------------>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:ital@1&display=swap" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600|Sacramento" rel="stylesheet" />
+
+        <!-------------------       Fontawesome       --------------------->
+        <script src="https://kit.fontawesome.com/8437ac70b8.js" crossorigin="anonymous"></script>
+
+        <link href="css/modal.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <!-----------------------------------------     Body           --------------------------------------------------->
+    <body>
+        <!-- HTML Follows BEM naming conventions IDs are only used for sections to connect menu achors to sections -->
+        <header class="navbar">
+            <div class="content__container">
+                <h2 id="navbar__logo">All Paws</h2>
+
+                <nav class="navbar__menu">
+                    <img id="navbar__hamburger" src="images/hamburgermenu_icon.svg" alt="Hamburger menu icon" />
+                    <img id="navbar__close" class="display-none" src="images/close_icon.svg" alt="Close menu icon" />
+
+                    <!-- Navigation starts as empty UL that will be populated with JS -->
+                    <ul id="navbar__list" class="closed-nav"></ul>
+                </nav>
+            </div>
+        </header>
+
+        <!------------------------      Main                 ------------------------>
+        <main>
+            <header id="main__hero">
+                <div class="content__container">
+                    <h1>Meet new and interesting dogs nearby!</h1>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor.</p>
+                    <button type="button" class="btn"><i class="fab fa-apple"></i> Download</button>
+                    <button type="button" class="btn1"><i class="fab fa-google-play"></i> Download</button>
+                </div>
+            </header>
+
+            <!-----             Each Section has an ID (used for the anchor) and a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav. The first section is set to active class by default      ------->
+
+            <!------------------------    Section 1      Services         -------------------------------------------------------->
+            <section id="services" data-nav="Services">
+                <div class="content__container">
+                    <h2>Our Services</h2>
+                    <div id="services__cards-container">
+                        <div class="services__card">
+                            <div class="services__card--image" id="services__card--image-adopt"></div>
+                            <p>How to adopt a dog: Everything you need to know.</p>
+                            <a href="#" class="link-yellow">Dog Adoption&nbsp;»</a>
+                        </div>
+                        <div class="services__card">
+                            <div class="services__card--image" id="services__card--image-train"></div>
+                            <p>Who's watching your dog? Find a trusted trainer on AllPaws.</p>
+                            <a href="#" class="link-yellow">Puppy Training&nbsp;»</a>
+                        </div>
+                        <div class="services__card">
+                            <div class="services__card--image" id="services__card--image-essentials"></div>
+                            <p>Haven&rsquo;t decided what to buy? No problem! Check our app for help.</p>
+                            <a href="#" class="link-yellow">Puppy Essentials&nbsp;»</a>
+                        </div>
+                        <div class="services__card">
+                            <div class="services__card--image" id="services__card--image-breeds"></div>
+                            <p>No time & knowledge? We&rsquo;ve got you covered!</p>
+                            <a href="#" class="link-yellow">Dog Breeds&nbsp;»</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!------------------------    Section 2    About Us          --------------------------------- ------------------------->
+            <section id="About" data-nav="About Us">
+                <div class="content__container">
+                    <h2>About Us</h2>
+                    <p>For more info <a href="#" class="link-yellow">click&nbsp;here&nbsp;»</a></p>
+                    <div id="about__cards-container">
+                        <div id="about__card--gnome" class="about__card">
+                            <div class="about__card--image--container">
+                                <i class="fas fa-check-circle fa-4x hover-icon"></i>
+                                <a href="#" class="link-yellow">Easy to use&nbsp;»</a>
+                                <p class="sub">So easy to use, even your dog could do it.</p>
+                            </div>
+                        </div>
+
+                        <div id="about__card--stockings" class="about__card">
+                            <div class="about__card--image--container">
+                                <i class="fas fa-bullseye fa-4x hover-icon"></i>
+                                <a href="#" class="link-yellow">Elite Clientele&nbsp;»</a>
+                                <p class="sub">We have all the dogs, the greatest dogs.</p>
+                            </div>
+                        </div>
+
+                        <div id="about__card--Xmas-tree" class="about__card">
+                            <div class="about__card--image--container">
+                                <i class="fas fa-heart fa-4x hover-icon"></i>
+                                <a href="#" class="link-yellow">Guaranteed to work&nbsp;»</a>
+                                <p class="sub">Find the love of your dog's life or your money back.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!------------------------    Section 3     Gallery      --------------------------------------------------------->
+
+            <section id="gallery" data-nav="Gallery" class="active-section-highlighted">
+                <div class="content__container">
+                    <h2>Gallery</h2>
+                    <p>
+                        I no longer have to sniff other dogs for love. I've found the hottest Corgi on AllPaws. <br />
+                        <em>Pebbles, New York</em>
+                    </p>
+
+                    <div id="gallery__cards-container">
+                        <img src="images/dog1.jpeg" alt="dog-type1-image" />
+                        <img src="images/dog2.jpeg" alt="dog-type2-image" />
+                        <img src="images/dog3.jpeg" alt="dog-type3-image" />
+                        <img src="images/dog4.jpeg" alt="dog-type4-image" />
+                        <img src="images/dog5.jpeg" alt="dog-type5-image" />
+                        <img src="images/dog6.jpeg" alt="dog-type6-image" />
+                    </div>
+                </div>
+            </section>
+
+            <!------------------------    Section 4    Get in Touch          --------------------------------------------------------->
+
+            <section id="get-in-touch" data-nav="Get in Touch">
+                <div class="content__container">
+                    <h2>Get in Touch</h2>
+                    <p>Join our commuity to receive information about our new arrivals, latest news, interesting facts directly into your inbox!</p>
+
+                    <form id="subscribe-form" action="/submit-somewhere">
+                        <label for="name" id="name-label">Your name&thinsp;<span class="asterisk">*</span></label>
+                        <input type="text" id="name" placeholder="Enter your name" name="name" class="textField" required />
+
+                        <label for="email" id="email-label">Your email&thinsp;<span class="asterisk">*</span></label>
+                        <input type="email" id="email" placeholder="Enter your email" name="email" class="textField" required />
+
+                        <input type="submit" value="Submit" id="submit" />
+                    </form>
+                    <p>Already a member? Please click the link to <a href="#" class="link-yellow">sign in</a>.</p>
+                </div>
+            </section>
+
+            <!------------------------    Section 5    Call to Action          ------------------------------------------------------->
+
+            <section id="cta" data-nav="CTA">
+                <div class="content__container">
+                    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+                    <button type="button" class="btn"><i class="fab fa-apple"></i> Download</button>
+                    <button type="button" class="btn1"><i class="fab fa-google-play"></i> Download</button>
+                </div>
+            </section>
+        </main>
+
+        <!-----------------------          Footer           --------------------->
+
+        <footer id="footer">
+            <i class="fab fa-twitter social-icon fa-2x"></i>
+            <i class="fab fa-linkedin-in social-icon fa-2x"></i>
+            <i class="fab fa-github social-icon fa-2x"></i>
+            <i class="fas fa-envelope social-icon fa-2x"></i>
+            <p>© Copyright 2021 AllPaws</p>
+        </footer>
+
+        <!------------------        JS script ----------------------->
+        <script src="js/app.js"></script>
+    </body>
+</html>
